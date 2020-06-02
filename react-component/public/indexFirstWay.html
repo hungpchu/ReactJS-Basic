@@ -1,0 +1,38 @@
+<!-- this way will have everything 
+  of react include in this file so we do not need
+the content of index.js in   -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>React App</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+   
+    <div id="member"></div>
+
+
+  <script type="text/babel">
+ // Member() đóng vai trò là một component, 
+  // nhiệm vụ là tạo một đối tượng member với tên và tuổi.
+    function Member(){
+      return (
+        <div className="member">
+        <h2>Hung Chu</h2>
+        <p>Age: 23</p>
+        </div>
+      );
+    }
+// ReactDOM.render giữ vai trò render 
+// nội dung ra trình duyệt, dựa vào id="member".
+    ReactDOM.render(
+        <Member />,
+        document.getElementById('member')
+      );
+  </script>
+  </body>
+</html>
