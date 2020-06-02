@@ -11,7 +11,7 @@ const member =
     age: '24'
   }
 }
-
+// cách này truyền tham số mà không lồng function vào nhau
 // function Avatar(props){
 //   return (
 //     <div className="avatar">
@@ -53,9 +53,13 @@ const member =
 //   );
 // }
 
+//  cách này truyền tham số mà  lồng function vào nhau
 function Avatar(props){
   return(
     <div className="avatar">
+      {/*
+       * props sẽ lấy biến avatar object và lấy path 
+       */}
       <img src={props.avatar.path} alt="" />
     </div>
   )
@@ -64,6 +68,9 @@ function Avatar(props){
 function MemberInfo(props){
   return(
     <div className="info">
+      {/* 
+       * avatar là tên biến truyền vào Avatar function
+       */}
       <Avatar avatar={props.info} />
       <h2>{props.info.name}</h2>
       <p>Tuổi: {props.info.age}</p>
@@ -82,10 +89,17 @@ function Comment(props){
 function Member(){
   return(
     <div className="member">
+      {/* 
+        * info là biến truyền vào MemberInfo function
+        */}
       <MemberInfo info={member.info} />
+      {/* 
+        * text là biến truyền vào Comment function
+        */}
       <Comment text={member.text} />
     </div>
   )
 };
+
 
 export default Member;
