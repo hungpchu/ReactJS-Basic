@@ -34,7 +34,9 @@ function Comment(){
     </div>
   );
 }
-
+/***
+ * tập hợp của component avatar + memberinfo + comment
+ */
 function Member()
 {
   return (
