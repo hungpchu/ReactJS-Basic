@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// thư viện axios =  để xử lý các thao tác 
+// HTTP REQUEST như các phương thức GET, POST, DELETE
 import axios from 'axios';
 
 class App extends Component {
@@ -9,6 +11,7 @@ class App extends Component {
   };
 
   componentDidMount() {
+    // thư viện Axios lấy dữ liệu từ server app.js
     axios.get('/api/test')
          .then(result => this.setState({ message: result.data.message }))
   };

@@ -1,3 +1,6 @@
+Port: localhost:3000<br/>
+Connect to server at: localhost:4000<br/>
+
 Overview: <br/>
 1/ client: react<br/>
 2/ server: express<br/>

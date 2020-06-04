@@ -31,6 +31,5 @@
       "last 1 safari version"
     ]
   },
-  "//": "proxy use to connect with server at port 4000 but react will listen at port 3000",
   "proxy": "http://localhost:4000"
 }
