@@ -1,0 +1,44 @@
+select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+/* for the label in form */
+li > label {
+  display: inline-block;
+  color: white;
+  width: 40px;
+  margin-bottom: 20px;
+  margin-left: -40px;
+}
+
+.instruction-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: -15px;
+  margin-left: 100px;
+}
+
+.update-form-body {
+  /* Center the form on the page */
+  width: 600px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid white;
+  border-radius: 1em;
+  margin: 0 auto;
+}
+
+.update-form-body > label {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  padding-right: 10px;
+}
+
+#save-data-button {
+  margin-left: 500px;
+}

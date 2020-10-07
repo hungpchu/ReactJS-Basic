@@ -19,15 +19,19 @@ class Member extends React.Component {
     };
 
     changeName = () => {
+        console.log('mood bd = ' + this.state.mood);
         this.setState(
             {
                 mood:"happy"
             }
         )
+        console.log('mood = ' + this.state.mood);
     }
 
     render()
     {
+        console.log('render bd');
+        console.log(' mood = ' + this.state.mood);
         return(
             <element>
                  <div className="member">

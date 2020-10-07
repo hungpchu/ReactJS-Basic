@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> (snapshot) renders correctly 1`] = `
+<div
+  className="update-form-body"
+>
+  <label
+    className="dropdown-label"
+  >
+    Choose a datasource to save updated data:
+  </label>
+  <select
+    className="dropdown-selection"
+    onClick={[Function]}
+  >
+    <option
+      id="select-selection-value"
+      type="submit"
+    >
+      select
+    </option>
+    <option
+      id="contacts-selection-value"
+      type="submit"
+    >
+      contacts
+    </option>
+    <option
+      id="dropbox-selection-value"
+      type="submit"
+    >
+      dropbox
+    </option>
+    <option
+      id="slack-selection-value"
+      type="submit"
+    >
+      slack
+    </option>
+    <option
+      id="tweet-selection-value"
+      type="submit"
+    >
+      tweet
+    </option>
+  </select>
+</div>
+`;

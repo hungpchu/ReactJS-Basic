@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> (snapshot) renders the component correctly 1`] = `
+<div
+  className="app-body"
+>
+  <h1
+    className="search-header"
+  >
+    ACME Search
+  </h1>
+  <div
+    className="seach-body"
+  >
+    <div
+      className="seach-box"
+    >
+      <input
+        className="search-input"
+        onChange={[Function]}
+        onKeyPress={[Function]}
+        placeholder="Search"
+        type="text"
+      />
+      <button
+        className="search-button"
+        onClick={[Function]}
+      >
+        Search
+      </button>
+      <button
+        id="update-data-button"
+        onClick={[Function]}
+      >
+        Update Data
+      </button>
+    </div>
+  </div>
+</div>
+`;
